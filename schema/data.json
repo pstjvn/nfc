@@ -1,0 +1,38 @@
+{
+  "$schema": "Data",
+  "title": "NFCPlaceUpdate",
+  "description": "Describes a place that uses nfc product",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "description": "The ID of the user corespponding to an account in social networks",
+      "type": "string",
+      "$_name": "userID"
+    },
+    "user_type": {
+      "description": "The auth provider for the user: FB or G+",
+      "type": "string",
+      "$_name": "userAuthProvider"
+    },
+    "place_likes": {
+      "description": "How many likes has the location total",
+      "type": "number",
+      "$_name": "locationLikes"
+    },
+    "user_likes": {
+      "description": "How many likes the last user has for this place in total",
+      "type": "number",
+      "$_name": "userLikes"
+    },
+    "place_name": {
+      "description": "The location name as registered in the system",
+      "type": "string",
+      "$_name": "locationName"
+    },
+    "refresh": {
+      "description": "The data refresh interval in seconds",
+      "type": "number",
+      "$_name": "refreshInterval"
+    }
+  }
+}
