@@ -8,6 +8,7 @@ goog.provide('nfc.vendor.Google');
 
 goog.require('goog.Uri');
 goog.require('goog.labs.net.xhr');
+goog.require('goog.string');
 goog.require('nfc.vendor.Base');
 
 
@@ -33,18 +34,18 @@ nfc.vendor.Google = goog.defineClass(nfc.vendor.Base, {
             throw new Error('Cannot find name');
           }
           if (goog.isDef(resp['name']['honorificPrefix'])) {
-            name += resp['name']['honorificPrefix'];
+            name += resp['name']['honorificPrefix'] + ' ';
           }
           if (goog.isDef(resp['name']['givenName'])) {
-            name += resp['name']['givenName'];
+            name += resp['name']['givenName'] + ' ';
           }
           if (goog.isDef(resp['name']['familyName'])) {
-            name += resp['name']['familyName'];
+            name += resp['name']['familyName'] + ' ';
           }
           if (goog.isDef(resp['name']['honorificSuffix'])) {
             name += resp['name']['honorificSuffix'];
           }
-          return name;
+          return goog.string.trim(name);
         });
   },
 
