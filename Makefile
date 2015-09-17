@@ -59,7 +59,7 @@ libraries:
 
 $(autogen_dir)/*.js: $(schema_dir)/*.json
 	echo "Generating DTO from JSONSchema"
-	node $(pstj_lib_dir)/nodejs/dtogen.js $(dto_prefix).gen.dto $(schema_dir)/ $(autogen_dir)/
+	node $(pstj_lib_dir)/nodejs/dtogen.js $(dto_prefix).gen.dto $(schema_dir)/ $(autogen_dir)/ true
 
 $(lintfile): $(public_source_files)
 	@$(lint_cmd) $?
