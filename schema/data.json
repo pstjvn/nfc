@@ -33,6 +33,14 @@
       "description": "The data refresh interval in seconds",
       "type": "number",
       "$_name": "refreshInterval"
+    },
+    "username":  {
+      "description": "This field is imperatively added when resolved",
+      "type": "string",
+    },
+    "usericonurl": {
+      "description": "This field is imperatively added when resolved",
+      "type": "string"
     }
   }
 }

@@ -21,33 +21,51 @@ nfc.gen.dto.NFCPlaceUpdate = goog.defineClass(pstj.ds.DtoBase, {
     /**
      * The ID of the user corespponding to an account in social networks
      * @type {string}
+     * @export
      */
     this.userID = '';
     /**
      * The auth provider for the user: FB or G+
      * @type {string}
+     * @export
      */
     this.userAuthProvider = '';
     /**
      * How many likes has the location total
      * @type {number}
+     * @export
      */
     this.locationLikes = 0;
     /**
      * How many likes the last user has for this place in total
      * @type {number}
+     * @export
      */
     this.userLikes = 0;
     /**
      * The location name as registered in the system
      * @type {string}
+     * @export
      */
     this.locationName = '';
     /**
      * The data refresh interval in seconds
      * @type {number}
+     * @export
      */
     this.refreshInterval = 0;
+    /**
+     * This field is imperatively added when resolved
+     * @type {string}
+     * @export
+     */
+    this.username = '';
+    /**
+     * This field is imperatively added when resolved
+     * @type {string}
+     * @export
+     */
+    this.usericonurl = '';
   },
 
   /** @override */
@@ -64,6 +82,10 @@ nfc.gen.dto.NFCPlaceUpdate = goog.defineClass(pstj.ds.DtoBase, {
         map['place_name'] : ''));
     this.refreshInterval = a.assertNumber((goog.isNumber(map['refresh']) ?
         map['refresh'] : 0));
+    this.username = a.assertString((goog.isString(map['username']) ?
+        map['username'] : ''));
+    this.usericonurl = a.assertString((goog.isString(map['usericonurl']) ?
+        map['usericonurl'] : ''));
     goog.base(this, 'fromJSON', map);
   },
 
@@ -75,7 +97,9 @@ nfc.gen.dto.NFCPlaceUpdate = goog.defineClass(pstj.ds.DtoBase, {
       'place_likes': this.locationLikes,
       'user_likes': this.userLikes,
       'place_name': this.locationName,
-      'refresh': this.refreshInterval
+      'refresh': this.refreshInterval,
+      'username': this.username,
+      'usericonurl': this.usericonurl
     };
   }
 });

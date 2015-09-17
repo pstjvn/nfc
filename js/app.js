@@ -6,9 +6,9 @@
 
 goog.provide('app');
 
-goog.require('nfc.control.Main');
+goog.require('app.Main');
 
 
 (function() {
-  (new nfc.control.Main());
+  (new app.Main());
 })();

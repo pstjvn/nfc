@@ -3,8 +3,8 @@
 
 // Import the defaults from libraies
 
-@import "../../pstj/less/ng-cloak";
-@import "../../pstj/less/reset";
+// @import "../../pstj/less/ng-cloak";
+// @import "../../pstj/less/reset";
 
 
 // Disable focus outline (Android)
@@ -21,4 +21,110 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+}
+
+* {-webkit-transition:all 150ms linear;margin:0;outline:none;}
+body{color: #1C75BC;font-family: sans-serif;}
+[flex] {
+  display: flex;
+  display: ms-flex;
+  display: -webkit-flex;
+}
+[center-center] {
+  align-items: center;
+  justify-content: center;
+}
+hr {
+  height: 1px;
+  background-color: #E1E1E1;
+  width: 92%;
+  margin: auto;
+  border: 0;
+  display: table;
+}
+.profile {
+  align-items: center;
+  padding: 0.4em;
+  color: #1C75BC;
+}
+.profile-picture {
+  margin-right: 10px;
+}
+.profile-picture img{
+  height: 50px;
+  display: block;
+}
+.profile-name {
+  max-height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 3;
+}
+@media (max-width: 580px) {
+  .profile-name {
+    white-space: normal;
+  }
+}
+.profile-likes {
+  /*background: #FFB021;*/
+  /*color: #FFF;*/
+  flex:2;
+  border-radius: 3px;
+  padding: 5px;
+  text-align: center;
+}
+.digit {
+  position: absolute;
+  color: #FF6818;
+  padding: 4px 4px 4px 32px;
+  font-size: 2.2em;
+}
+.just-liked {
+  padding: 0.4em;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+.logo-count {
+  display: flex;
+  display: ms-flex;
+  display: -webkit-flex;
+}
+.svg {
+  margin-right: 10px;
+  padding: 1em;
+  height: 80px;
+  width: 160px;
+}
+.svg svg {
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 8px;
+}
+@media (max-width: 580px) {
+  .logo-count {
+    display: block;
+  }
+  .svg {
+    width: 98%;
+    padding: 1em 0;
+    margin: auto;
+    display: flex;
+    display: ms-flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .digit {
+    font-size: 1.7em;
+  }
+}
+.liked-place {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 0 0 7px;
+  background-color: #1C75BC;
+  color: #FFF;
+  flex: 1;
+  text-align: center;
 }
