@@ -17,6 +17,7 @@ goog.require('goog.Promise');
 goog.require('goog.Timer');
 goog.require('goog.labs.net.image');
 goog.require('nfc.gen.dto.NFCPlaceUpdate');
+goog.require('nfc.ng.filter');
 goog.require('nfc.vendor.Facebook');
 goog.require('nfc.vendor.Google');
 goog.require('pstj.control.Control');

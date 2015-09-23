@@ -10,25 +10,27 @@
   username: string]}
 <div class="{css logo-count}">
   <div class="{css svg}">
-    {call .Logo /}
-    <div style="display: none; position: absolute; left: 0; top: 0; height: 100%; width: 100%;">
-      <div data-ng-model="locationLikes">{$data.locationLikes}</div>
+    <div class="{css logo-count-likes-wraper}">
+      <div class="{css logo-count-likes}" data-ng-model="locationLikes | pad(6) | splitInMiddle">{$data.locationLikes}</div>
     </div>
+    {call .Logo /}
   </div>
-  <div style="flex: 1;max-width: 380px;">
+  <div class="{css profile-wrap}">
     <div class="{css profile}" flex center-center>
       <div class="{css profile-picture}">
         <img data-ng-model="usericonurl" src="{$data.usericonurl}">
       </div>
-      <div data-ng-model="username" class="{css profile-name}">{$data.username}</div>
+      <div class="{css profile-name}" data-ng-model="username">{$data.username}</div>
       <div class="{css profile-likes}">
-        <div data-ng-model="userLikes" class="{css digit}">{$data.userLikes}</div>
+        <div class="{css profile-likes-number}">
+          <div class="{css digit}" data-ng-model="userLikes | pad(4)">{$data.userLikes}</div>
+        </div>
         {call .Digits /}
       </div>
     </div>
     <div class="{css just-liked}" flex center-center>
-      <span>Just Liked Place: </span>
-      <span data-ng-model="locationName" class="{css liked-place}">{$data.locationName}</span>
+      <span>{msg desc="Lable for the just liked place"}Just Liked Place:{sp}{/msg}</span>
+      <span class="{css liked-place}" data-ng-model="locationName">{$data.locationName}</span>
     </div>
   </div>
 </div>
@@ -36,8 +38,7 @@
 
 /** The main logo */
 {template .Logo}
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
-    height="100%" viewBox="0 0 550 288" xml:space="preserve">
+<svg x="0px" y="0px" width="100%" height="100%" viewBox="0 0 550 288"  xml:space="preserve">
   <g>
   	<path fill="#FF6818" d="M189.725,198.332c0.045,14.284,0.167,28.57,0.148,42.854c-0.006,14.283,0.039,28.567-0.028,42.849
   		l-0.02,4.122l-3.017-2.881l-34.096-32.562l-34.019-32.641l3.45,0.459l-52.385,30.014l-52.456,29.887l-13.129,7.481l7.855-12.977
@@ -99,7 +100,7 @@
 
 /** Digits template */
 {template .Digits}
-<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 130 50" xml:space="preserve">
+<svg x="0px" y="0px" viewBox="0 0 130 50" xml:space="preserve">
   <g>
   	<path fill="#1C75BC" d="M31.995,1.458c0.346,0.349,0.52,0.783,0.52,1.305c0,0.479-0.174,0.892-0.52,1.24   C31.605,4.394,31.106,4.59,30.5,4.59H7.493c-0.954,0-1.69,0.305-2.21,0.914C4.849,6.025,4.633,6.7,4.633,7.526v14.746H20.92   c0.65,0,1.17,0.174,1.56,0.521c0.346,0.349,0.52,0.783,0.52,1.305c0,0.479-0.174,0.893-0.52,1.24   c-0.39,0.392-0.91,0.587-1.56,0.587H4.633v16.508c0,0.781,0.216,1.434,0.65,1.957c0.52,0.609,1.256,0.912,2.21,0.912h23.852   c0.65,0,1.17,0.176,1.56,0.523c0.346,0.348,0.52,0.783,0.52,1.305c0,0.479-0.174,0.893-0.52,1.24   c-0.39,0.391-0.91,0.586-1.56,0.586H6.778c-1.994,0-3.553-0.652-4.68-1.957c-0.997-1.174-1.495-2.609-1.495-4.307V7.265   c0-1.739,0.498-3.197,1.495-4.372c1.126-1.305,2.686-1.958,4.68-1.958H30.5C31.106,0.936,31.605,1.11,31.995,1.458z"/>
   </g>
