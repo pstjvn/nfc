@@ -1,11 +1,11 @@
 goog.provide('app.Main');
 
-goog.require('app.Ui');
 goog.require('goog.Uri');
 goog.require('goog.asserts');
 goog.require('goog.dom');
 goog.require('nfc.control.Main');
 goog.require('pstj.configure');
+goog.require('pstj.ds.ngmodel');
 
 
 /**
@@ -31,7 +31,12 @@ app.Main = goog.defineClass(null, {
      * @private
      */
     this.ctrl_ = new nfc.control.Main(this.acctid_, this.baseurl_);
-    this.ui_ = new app.Ui();
+    /**
+     * The root element of the bindings.
+     * @type {Element}
+     * @private
+     */
+    this.rootElement_ = null;
     this.init();
   },
 
@@ -40,8 +45,9 @@ app.Main = goog.defineClass(null, {
    * @protected
    */
   init: function() {
+    this.rootElement_ = goog.asserts.assertElement(document.body);
+    pstj.ds.ngmodel.bindElement(this.rootElement_);
     this.ctrl_.setUpdateCallback(goog.bind(this.paint, this));
-    goog.dom.removeNode(document.getElementById('loader'));
   },
 
   /**
@@ -50,10 +56,8 @@ app.Main = goog.defineClass(null, {
    * @protected
    */
   paint: function(data) {
-    if (!this.ui_.isInDocument()) {
-      this.ui_.setModel(data);
-      this.ui_.render();
-    }
+    console.log('Is it coming here?');
+    pstj.ds.ngmodel.updateElement(this.rootElement_, data);
   },
 
   statics: {

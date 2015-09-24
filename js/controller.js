@@ -160,6 +160,7 @@ nfc.control.Main = goog.defineClass(pstj.control.Control, {
       this.data_.usericonurl = this.storage_.usericonurl;
       this.storage_.fromJSON(/** @type {Object<string, *>} */(
           this.data_.toJSON()));
+      this.onUpdateCallback_(this.storage_);
     }
   },
 
