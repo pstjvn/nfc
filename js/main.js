@@ -56,7 +56,6 @@ app.Main = goog.defineClass(null, {
    * @protected
    */
   paint: function(data) {
-    console.log('Is it coming here?');
     pstj.ds.ngmodel.updateElement(this.rootElement_, data);
   },
 
