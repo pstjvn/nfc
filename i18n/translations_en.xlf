@@ -1052,11 +1052,6 @@
         <target/>
         <note priority="1" from="description">country name</note>
       </trans-unit>
-      <trans-unit id="6480915717456085804" datatype="html">
-        <source>Just Liked Place: </source>
-        <target/>
-        <note priority="1" from="description">Lable for the just liked place</note>
-      </trans-unit>
       <trans-unit id="6539744792166853567" datatype="html">
         <source>Cape Verde</source>
         <target/>
