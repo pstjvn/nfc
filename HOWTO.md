@@ -26,7 +26,7 @@ header.
 * ```__acctid``` - a string specifying the account ID on the backend system for the current business account.
 * ```__NFC.CONFIG.BASE_URL``` - a string representing the path to request for updates. Note that the account ID will be appended to it.
 
-The HTML content should be put __before__ the link to the e-like.js script as
-the sript auto-runs and looks for the *body* element.
+The HTML content should be put __before__ the link to the ```e-like.js```
+script as the script auto-runs and looks for the *body* element.
 
-CSS can be inlined as in the example or external (via a *link* tag).
+CSS can be inlined (as in the example) or external (via a *link* tag).
