@@ -24,6 +24,11 @@
       "type": "number",
       "$_name": "userLikes"
     },
+    "user_rating": {
+      "description": "Unknown.",
+      "type": "number",
+      "$_name": "userRating"
+    },
     "place_name": {
       "description": "The location name as registered in the system",
       "type": "string",

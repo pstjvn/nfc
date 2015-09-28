@@ -11,6 +11,7 @@ The following models are recognized:
 
 * ```locationName```
 * ```userLikes```
+* ```userRating```
 * ```username```
 * ```locationLikes```
 * ```usericonurl```

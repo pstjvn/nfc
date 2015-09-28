@@ -43,6 +43,12 @@ nfc.gen.dto.NFCPlaceUpdate = goog.defineClass(pstj.ds.DtoBase, {
      */
     this.userLikes = 0;
     /**
+     * Unknown.
+     * @type {number}
+     * @export
+     */
+    this.userRating = 0;
+    /**
      * The location name as registered in the system
      * @type {string}
      * @export
@@ -78,6 +84,8 @@ nfc.gen.dto.NFCPlaceUpdate = goog.defineClass(pstj.ds.DtoBase, {
         map['place_likes'] : 0));
     this.userLikes = a.assertNumber((goog.isNumber(map['user_likes']) ?
         map['user_likes'] : 0));
+    this.userRating = a.assertNumber((goog.isNumber(map['user_rating']) ?
+        map['user_rating'] : 0));
     this.locationName = a.assertString((goog.isString(map['place_name']) ?
         map['place_name'] : ''));
     this.refreshInterval = a.assertNumber((goog.isNumber(map['refresh']) ?
@@ -96,6 +104,7 @@ nfc.gen.dto.NFCPlaceUpdate = goog.defineClass(pstj.ds.DtoBase, {
       'user_type': this.userAuthProvider,
       'place_likes': this.locationLikes,
       'user_likes': this.userLikes,
+      'user_rating': this.userRating,
       'place_name': this.locationName,
       'refresh': this.refreshInterval,
       'username': this.username,
