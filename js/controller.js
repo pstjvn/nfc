@@ -153,9 +153,19 @@ nfc.control.Main = goog.defineClass(pstj.control.Control, {
       this.timeout_ = this.data_.refreshInterval * 1000;
       this.timer_.setInterval(this.timeout_);
     }
-    if (this.updateCache()) {
+    if (this.data_.userID != '0' && this.updateCache()) {
+      this.data_.hasUser = true;
       this.getNewUser().then(this.onCacheUpdated, null, this);
     } else {
+      if (this.data_.userID == '0') {
+        this.cache_[0] = '';
+        this.cache_[1] = '';
+        this.data_.usericonurl = '';
+        this.data_.username = '';
+        this.data_.hasUser = false;
+      } else {
+        this.data_.hasUser = true;
+      }
       this.data_.username = this.storage_.username;
       this.data_.usericonurl = this.storage_.usericonurl;
       this.storage_.fromJSON(/** @type {Object<string, *>} */(

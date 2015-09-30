@@ -72,6 +72,12 @@ nfc.gen.dto.NFCPlaceUpdate = goog.defineClass(pstj.ds.DtoBase, {
      * @export
      */
     this.usericonurl = '';
+    /**
+     * If the place has a last user entry. Imperatively added
+     * @type {boolean}
+     * @export
+     */
+    this.hasUser = false;
   },
 
   /** @override */
@@ -94,6 +100,8 @@ nfc.gen.dto.NFCPlaceUpdate = goog.defineClass(pstj.ds.DtoBase, {
         map['username'] : ''));
     this.usericonurl = a.assertString((goog.isString(map['usericonurl']) ?
         map['usericonurl'] : ''));
+    this.hasUser = a.assertBoolean((goog.isBoolean(map['hasUser']) ?
+        map['hasUser'] : false));
     goog.base(this, 'fromJSON', map);
   },
 
@@ -108,7 +116,8 @@ nfc.gen.dto.NFCPlaceUpdate = goog.defineClass(pstj.ds.DtoBase, {
       'place_name': this.locationName,
       'refresh': this.refreshInterval,
       'username': this.username,
-      'usericonurl': this.usericonurl
+      'usericonurl': this.usericonurl,
+      'hasUser': this.hasUser
     };
   }
 });

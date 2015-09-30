@@ -7,6 +7,25 @@ The application supports arbitrary template in the body tag.
 Data binding is configured with the ```data-ng-model``` html property (please
 see included HTML file).
 
+Element hiding / showing is provided by the
+```data-ng-show``` property - if it is present on an element the element will
+be shown only if the model bound to it evaluates to true.
+
+Example:
+
+```
+<div class="myelement" data-ng-show="hasUser">
+  <span>We have a user!</span>
+</div>
+```
+
+In the above example if the value of ```hasUser``` evaluates to true the div
+and all its content will be visible (style.display == 'block'), if the value of
+```hasUser``` is evaluated to false then the div and all its content will not
+be visible (style.display == 'none').
+
+### Recognized data bindings
+
 The following models are recognized:
 
 * ```locationName```
@@ -15,11 +34,14 @@ The following models are recognized:
 * ```username```
 * ```locationLikes```
 * ```usericonurl```
+* ```hasUser```
 
 The following filters on data values are supported:
 
 * ```pad(n)``` - pads the number to become at least ```n``` digits long, filling empty spaces with zeroes.
 * ```splitInMiddle``` - splits a string in the middle and insets a space at the split point.
+
+### Configuration options
 
 The configuration for the backend is to be found in the first script tag in the
 header.

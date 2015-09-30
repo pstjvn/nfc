@@ -46,6 +46,10 @@
     "usericonurl": {
       "description": "This field is imperatively added when resolved",
       "type": "string"
+    },
+    "hasUser": {
+      "description": "If the place has a last user entry. Imperatively added",
+      "type": "boolean"
     }
   }
 }
