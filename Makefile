@@ -168,7 +168,6 @@ $(build_dir)/$(ns)-cssmap.build.js
 	$(java) $(js_compiler) \
 	$(build_js_compiler_option) \
 	--compilation_level=ADVANCED \
-	--new_type_inf \
 	--flagfile=options/compile.ini \
 	--js=build/$(ns)-cssmap.build.js \
 	$(namespace_specific_flags) \
