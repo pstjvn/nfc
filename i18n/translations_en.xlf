@@ -47,6 +47,16 @@
         <target/>
         <note priority="1" from="description">country name</note>
       </trans-unit>
+      <trans-unit id="174465106029438224" datatype="html">
+        <source>remember me</source>
+        <target/>
+        <note priority="1" from="description">label on checkbox</note>
+      </trans-unit>
+      <trans-unit id="205044832662301680" datatype="html">
+        <source>Password is required</source>
+        <target/>
+        <note priority="1" from="description">Error on input</note>
+      </trans-unit>
       <trans-unit id="212820117866187249" datatype="html">
         <source>India</source>
         <target/>
@@ -76,6 +86,10 @@
         <source>Colorado</source>
         <target/>
         <note priority="1" from="description">state</note>
+      </trans-unit>
+      <trans-unit id="516176798986294299" datatype="html">
+        <source>Country</source>
+        <target/>
       </trans-unit>
       <trans-unit id="536132288864070221" datatype="html">
         <source>Turkey</source>
@@ -141,6 +155,11 @@
         <source>Australia</source>
         <target/>
         <note priority="1" from="description">country name</note>
+      </trans-unit>
+      <trans-unit id="815051607554522412" datatype="html">
+        <source>Go back to login</source>
+        <target/>
+        <note priority="1" from="description">Link-like clickable hint in form</note>
       </trans-unit>
       <trans-unit id="844393278802219206" datatype="html">
         <source>Pennsylvania</source>
@@ -257,6 +276,11 @@
         <target/>
         <note priority="1" from="description">country name</note>
       </trans-unit>
+      <trans-unit id="1431416938026210429" datatype="html">
+        <source>Password</source>
+        <target/>
+        <note priority="1" from="description">input hint/placeholder</note>
+      </trans-unit>
       <trans-unit id="1452514123394852388" datatype="html">
         <source>Rhode Island</source>
         <target/>
@@ -327,10 +351,20 @@
         <target/>
         <note priority="1" from="description">country name</note>
       </trans-unit>
+      <trans-unit id="1826215573205981970" datatype="html">
+        <source>Company</source>
+        <target/>
+        <note priority="1" from="description">input hint/placeholder</note>
+      </trans-unit>
       <trans-unit id="1826925740451482221" datatype="html">
         <source>Lesotho</source>
         <target/>
         <note priority="1" from="description">country name</note>
+      </trans-unit>
+      <trans-unit id="1890300073702152532" datatype="html">
+        <source>E-mail</source>
+        <target/>
+        <note priority="1" from="description">input hint/placeholder</note>
       </trans-unit>
       <trans-unit id="1902685080273086420" datatype="html">
         <source>District of Columbia</source>
@@ -366,6 +400,11 @@
         <source>Slovenia</source>
         <target/>
         <note priority="1" from="description">country name</note>
+      </trans-unit>
+      <trans-unit id="2012659005494284050" datatype="html">
+        <source>Forgot your password?</source>
+        <target/>
+        <note priority="1" from="description">Error displayed to user in form</note>
       </trans-unit>
       <trans-unit id="2036677760731944610" datatype="html">
         <source>Azerbaijan</source>
@@ -452,6 +491,11 @@
         <target/>
         <note priority="1" from="description">country name</note>
       </trans-unit>
+      <trans-unit id="2314075913167237221" datatype="html">
+        <source>City</source>
+        <target/>
+        <note priority="1" from="description">input hint/placeholder</note>
+      </trans-unit>
       <trans-unit id="2329624899413840617" datatype="html">
         <source>Vermont</source>
         <target/>
@@ -502,6 +546,11 @@
         <target/>
         <note priority="1" from="description">state</note>
       </trans-unit>
+      <trans-unit id="2714604464530471830" datatype="html">
+        <source>Minimum 6 symbols</source>
+        <target/>
+        <note priority="1" from="description">Error on input</note>
+      </trans-unit>
       <trans-unit id="2757820189950683014" datatype="html">
         <source>North Dakota</source>
         <target/>
@@ -511,6 +560,10 @@
         <source>Trinidad and Tobago</source>
         <target/>
         <note priority="1" from="description">country name</note>
+      </trans-unit>
+      <trans-unit id="2775505798796712686" datatype="html">
+        <source>Log in using your social media account</source>
+        <target/>
       </trans-unit>
       <trans-unit id="2805266561663693158" datatype="html">
         <source>Minnesota</source>
@@ -592,6 +645,11 @@
         <target/>
         <note priority="1" from="description">state</note>
       </trans-unit>
+      <trans-unit id="3301086086650990787" datatype="html">
+        <source>Register</source>
+        <target/>
+        <note priority="1" from="description">Register button label</note>
+      </trans-unit>
       <trans-unit id="3303718492506441789" datatype="html">
         <source>Guinea</source>
         <target/>
@@ -637,6 +695,16 @@
         <target/>
         <note priority="1" from="description">Player playback option</note>
       </trans-unit>
+      <trans-unit id="3586674587150281199" datatype="html">
+        <source>Last name</source>
+        <target/>
+        <note priority="1" from="description">input hint/placeholder</note>
+      </trans-unit>
+      <trans-unit id="3590805807378700861" datatype="html">
+        <source>Google</source>
+        <target/>
+        <note priority="1" from="description">button label</note>
+      </trans-unit>
       <trans-unit id="3591085113786124083" datatype="html">
         <source>New Zealand</source>
         <target/>
@@ -646,6 +714,11 @@
         <source>Wisconsin</source>
         <target/>
         <note priority="1" from="description">state</note>
+      </trans-unit>
+      <trans-unit id="3702338872876040900" datatype="html">
+        <source>Username is required</source>
+        <target/>
+        <note priority="1" from="description">Error on input</note>
       </trans-unit>
       <trans-unit id="3710133024160860873" datatype="html">
         <source>Sierra Leone</source>
@@ -676,6 +749,11 @@
         <source>Guide</source>
         <target/>
         <note priority="1" from="description">Guide</note>
+      </trans-unit>
+      <trans-unit id="3801896974809779804" datatype="html">
+        <source>Valid email only</source>
+        <target/>
+        <note priority="1" from="description">Error on input</note>
       </trans-unit>
       <trans-unit id="3831314565285490528" datatype="html">
         <source>Virginia</source>
@@ -716,6 +794,11 @@
         <source>Guyana</source>
         <target/>
         <note priority="1" from="description">country name</note>
+      </trans-unit>
+      <trans-unit id="4021752662928002901" datatype="html">
+        <source>Update</source>
+        <target/>
+        <note priority="1" from="description">Update button label</note>
       </trans-unit>
       <trans-unit id="4082876576192670199" datatype="html">
         <source>Uzbekistan</source>
@@ -882,6 +965,11 @@
         <target/>
         <note priority="1" from="description">country name</note>
       </trans-unit>
+      <trans-unit id="5134355160296559257" datatype="html">
+        <source>request password</source>
+        <target/>
+        <note priority="1" from="description">button label</note>
+      </trans-unit>
       <trans-unit id="5144971260883559528" datatype="html">
         <source>Yemen</source>
         <target/>
@@ -891,6 +979,11 @@
         <source>Paraguay</source>
         <target/>
         <note priority="1" from="description">country name</note>
+      </trans-unit>
+      <trans-unit id="5248717555542428023" datatype="html">
+        <source>Username</source>
+        <target/>
+        <note priority="1" from="description">input hint/placeholder</note>
       </trans-unit>
       <trans-unit id="5259023098228234423" datatype="html">
         <source>Mali</source>
@@ -912,10 +1005,20 @@
         <target/>
         <note priority="1" from="description">state</note>
       </trans-unit>
+      <trans-unit id="5342432350421167093" datatype="html">
+        <source>First name</source>
+        <target/>
+        <note priority="1" from="description">input hint/placeholder</note>
+      </trans-unit>
       <trans-unit id="5355657315596110768" datatype="html">
         <source>Lao People's Republic</source>
         <target/>
         <note priority="1" from="description">country name</note>
+      </trans-unit>
+      <trans-unit id="5373727393387841282" datatype="html">
+        <source>Repeat password</source>
+        <target/>
+        <note priority="1" from="description">input hint/placeholder</note>
       </trans-unit>
       <trans-unit id="5378112888361106499" datatype="html">
         <source>Ireland</source>
@@ -977,6 +1080,10 @@
         <target/>
         <note priority="1" from="description">country name</note>
       </trans-unit>
+      <trans-unit id="5911214550882917183" datatype="html">
+        <source>State</source>
+        <target/>
+      </trans-unit>
       <trans-unit id="5913366966339102148" datatype="html">
         <source>Luxembourg</source>
         <target/>
@@ -996,6 +1103,11 @@
         <source>Germany</source>
         <target/>
         <note priority="1" from="description">country name</note>
+      </trans-unit>
+      <trans-unit id="6024649140164351905" datatype="html">
+        <source>Stay logged in</source>
+        <target/>
+        <note priority="1" from="description">hint for checkbox</note>
       </trans-unit>
       <trans-unit id="6133495983093212227" datatype="html">
         <source>United States</source>
@@ -1032,6 +1144,11 @@
         <target/>
         <note priority="1" from="description">state</note>
       </trans-unit>
+      <trans-unit id="6304432362546770951" datatype="html">
+        <source>Address</source>
+        <target/>
+        <note priority="1" from="description">input hint/placeholder</note>
+      </trans-unit>
       <trans-unit id="6321687538487059592" datatype="html">
         <source>Norway</source>
         <target/>
@@ -1052,10 +1169,20 @@
         <target/>
         <note priority="1" from="description">country name</note>
       </trans-unit>
+      <trans-unit id="6503934920192125236" datatype="html">
+        <source>Username is required' </source>
+        <target/>
+        <note priority="1" from="description">Error when username is not filled in</note>
+      </trans-unit>
       <trans-unit id="6539744792166853567" datatype="html">
         <source>Cape Verde</source>
         <target/>
         <note priority="1" from="description">country name</note>
+      </trans-unit>
+      <trans-unit id="6542676228301148432" datatype="html">
+        <source>login</source>
+        <target/>
+        <note priority="1" from="description">button label</note>
       </trans-unit>
       <trans-unit id="6546239914534670998" datatype="html">
         <source>Lithuania</source>
@@ -1317,6 +1444,11 @@
         <target/>
         <note priority="1" from="description">country name</note>
       </trans-unit>
+      <trans-unit id="7831887949049012877" datatype="html">
+        <source>Minimum 4, letters only</source>
+        <target/>
+        <note priority="1" from="description">Error on input</note>
+      </trans-unit>
       <trans-unit id="7833044528021545549" datatype="html">
         <source>Configure playback</source>
         <target/>
@@ -1331,6 +1463,11 @@
         <source>Cambodia</source>
         <target/>
         <note priority="1" from="description">country name</note>
+      </trans-unit>
+      <trans-unit id="7879259094177531767" datatype="html">
+        <source>Or register a new account</source>
+        <target/>
+        <note priority="1" from="description">Link-like clickable hint in form</note>
       </trans-unit>
       <trans-unit id="7892590553414841819" datatype="html">
         <source>Illinois</source>
@@ -1387,6 +1524,16 @@
         <target/>
         <note priority="1" from="description">state</note>
       </trans-unit>
+      <trans-unit id="8075656321439678912" datatype="html">
+        <source>Valid email is required</source>
+        <target/>
+        <note priority="1" from="description">Error on input</note>
+      </trans-unit>
+      <trans-unit id="8121141462865337916" datatype="html">
+        <source>Phone number</source>
+        <target/>
+        <note priority="1" from="description">input hint/placeholder</note>
+      </trans-unit>
       <trans-unit id="8147072510678737075" datatype="html">
         <source>Mexico</source>
         <target/>
@@ -1412,6 +1559,11 @@
         <target/>
         <note priority="1" from="description">country name</note>
       </trans-unit>
+      <trans-unit id="8356895804466136765" datatype="html">
+        <source>PayPal E-mail</source>
+        <target/>
+        <note priority="1" from="description">input hint/placeholder</note>
+      </trans-unit>
       <trans-unit id="8420291181849337180" datatype="html">
         <source>Venezuela</source>
         <target/>
@@ -1426,6 +1578,11 @@
         <source>El Salvador</source>
         <target/>
         <note priority="1" from="description">country name</note>
+      </trans-unit>
+      <trans-unit id="8520134266293328706" datatype="html">
+        <source>Valid phone number is require</source>
+        <target/>
+        <note priority="1" from="description">Error on input</note>
       </trans-unit>
       <trans-unit id="8521991040120836142" datatype="html">
         <source>Mississippi</source>
@@ -1461,6 +1618,11 @@
         <source>Hawaii</source>
         <target/>
         <note priority="1" from="description">state</note>
+      </trans-unit>
+      <trans-unit id="8790918354594417962" datatype="html">
+        <source>Facebook</source>
+        <target/>
+        <note priority="1" from="description">button label</note>
       </trans-unit>
       <trans-unit id="8795047040687500838" datatype="html">
         <source>Error occured</source>

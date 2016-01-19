@@ -47,6 +47,7 @@ The configuration for the backend is to be found in the first script tag in the
 header.
 
 * ```__acctid``` - a string specifying the account ID on the backend system for the current business account.
+* `__locationid` - a string specifying the location ID to match the account on the system. One business can have multiple location.
 * ```__NFC.CONFIG.BASE_URL``` - a string representing the path to request for updates. Note that the account ID will be appended to it.
 
 The HTML content should be put __before__ the link to the ```e-like.js```

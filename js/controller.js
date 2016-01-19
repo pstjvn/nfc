@@ -29,16 +29,15 @@ nfc.control.Main = goog.defineClass(pstj.control.Control, {
   /**
    * @constructor
    * @extends {pstj.control.Control}
-   * @param {!string} acctid The account id of the location.
    * @param {!string} updateurl The URL to query for updates.
    */
-  constructor: function(acctid, updateurl) {
+  constructor: function(updateurl) {
     pstj.control.Control.call(this);
     /**
      * @type {!string}
      * @protected
      */
-    this.updateUrl = (updateurl + acctid);
+    this.updateUrl = updateurl;
     /**
      * The timeout in milliseconds.
      * @type {!number}
@@ -97,9 +96,15 @@ nfc.control.Main = goog.defineClass(pstj.control.Control, {
   /** @override */
   init: function() {
     goog.base(this, 'init');
-    this.getHandler().listen(this.data_, pstj.ds.DtoBase.EventType.CHANGE,
-        this.onDataChange);
-    this.getHandler().listen(this.timer_, goog.Timer.TICK, this.onTick);
+    this.getHandler()
+        .listen(this.data_, pstj.ds.DtoBase.EventType.CHANGE, this.onDataChange)
+        .listen(this.storage_, pstj.ds.DtoBase.EventType.CHANGE, function(e) {
+          if (!goog.isNull(this.onUpdateCallback_)) {
+            this.onUpdateCallback_(this.storage_);
+          }
+        })
+        .listen(this.timer_, goog.Timer.TICK, this.onTick);
+
     this.update();
     this.timer_.start();
   },
@@ -170,7 +175,6 @@ nfc.control.Main = goog.defineClass(pstj.control.Control, {
       this.data_.usericonurl = this.storage_.usericonurl;
       this.storage_.fromJSON(/** @type {Object<string, *>} */(
           this.data_.toJSON()));
-      this.onUpdateCallback_(this.storage_);
     }
   },
 
@@ -180,13 +184,10 @@ nfc.control.Main = goog.defineClass(pstj.control.Control, {
    * @protected
    */
   onCacheUpdated: function(userinfo) {
-    if (!goog.isNull(this.onUpdateCallback_)) {
-      this.data_.username = userinfo[0];
-      this.data_.usericonurl = userinfo[1];
-      this.storage_.fromJSON(/** @type {Object<string, *>} */(
-          this.data_.toJSON()));
-      this.onUpdateCallback_(this.storage_);
-    }
+    this.data_.username = userinfo[0];
+    this.data_.usericonurl = userinfo[1];
+    this.storage_.fromJSON(/** @type {Object<string, *>} */(
+        this.data_.toJSON()));
   },
 
   /**
