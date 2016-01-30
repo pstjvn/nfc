@@ -1289,6 +1289,11 @@
         <target/>
         <note priority="1" from="description">state</note>
       </trans-unit>
+      <trans-unit id="7081274374396424815" datatype="html">
+        <source>Account ID:</source>
+        <target/>
+        <note priority="1" from="description">label</note>
+      </trans-unit>
       <trans-unit id="7104853853273794929" datatype="html">
         <source>Greenland</source>
         <target/>

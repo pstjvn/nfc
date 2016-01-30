@@ -87,8 +87,8 @@ nfc.vendor.Facebook = goog.defineClass(nfc.vendor.Base, {
   constructAccessTokenQuery_: function() {
     return 'https://graph.facebook.com/' +
         'oauth/access_token?' +
-        'client_id=876551042427454&' +
-        'client_secret=d2c2d482d2f62bf1cc4e3553aace77ea' +
+        'client_id=208475542818108&' +
+        'client_secret=4852efd208f5d59d0a3bd4ebbe81b28d' +
         '&grant_type=client_credentials';
   },
 
